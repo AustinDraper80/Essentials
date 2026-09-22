@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: flower.ma
-//Last modified: Tue, Sep 22, 2026 03:37:55 PM
+//Last modified: Tue, Sep 22, 2026 03:39:27 PM
 //Codeset: UTF-8
 requires maya "2027";
 requires -nodeType "UsdDefaultSettings" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.37.0";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.6.2";
-fileInfo "UUID" "CE22CBCC-8042-AF56-1DE5-CB9D243323D5";
+fileInfo "UUID" "CC6A7432-3D45-7F72-908C-7EA1875069B6";
 createNode transform -s -n "persp";
 	rename -uid "3A6E56AB-D54F-CBD0-9191-CAA548B525D6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 35.669410755383993 26.743811171145559 45.109089793104189 ;
-	setAttr ".r" -type "double3" -17.400000000002144 -681.20000000000027 0 ;
+	setAttr ".t" -type "double3" 30.685079758144916 37.706501933394044 39.471941193922838 ;
+	setAttr ".r" -type "double3" -29.999999999998845 -681.59999999999798 2.0292083924730351e-15 ;
 	setAttr ".rpt" -type "double3" 1.0391028374829926e-16 -2.6117615381253472e-17 6.58086827933607e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F690B5FE-7741-7AD5-4C80-1F99EBA06EB7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 60.747132141780668;
+	setAttr ".coi" 58.257122570430873;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1971,13 +1971,13 @@ createNode mesh -n "pasted__revolvedSurfaceShape2" -p "pasted__revolvedSurface2"
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 1 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 272 ".pt";
+	setAttr -s 273 ".pt";
 	setAttr ".pt[1]" -type "float3" 0 0 -9.5367432e-07 ;
 	setAttr ".pt[272]" -type "float3" 4.4703484e-08 2.9802322e-08 -6.5565109e-07 ;
 	setAttr ".pt[273]" -type "float3" 0 2.9802322e-08 2.0861626e-07 ;
@@ -8844,6 +8844,18 @@ createNode groupId -n "pasted__pasted__groupId13";
 createNode groupId -n "pasted__pasted__groupId14";
 	rename -uid "18586A8C-0142-BF0D-D73E-41836A0582E8";
 	setAttr ".ihi" 0;
+createNode polyBevel3 -n "polyBevel1";
+	rename -uid "16DB2C56-EF47-D4C9-85B0-129866CF65F9";
+	setAttr ".uopa" yes;
+	setAttr ".ics" -type "componentList" 32 "e[0]" "e[4]" "e[152]" "e[192]" "e[206]" "e[219]" "e[255]" "e[267]" "e[279]" "e[411]" "e[447]" "e[459]" "e[471]" "e[503]" "e[515]" "e[525]" "e[530]" "e[536]" "e[695]" "e[737]" "e[751]" "e[764]" "e[802]" "e[814]" "e[826]" "e[967]" "e[1005]" "e[1017]" "e[1029]" "e[1063]" "e[1075]" "e[1085]";
+	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0.067168422866224375 0 0 1;
+	setAttr ".ws" yes;
+	setAttr ".oaf" yes;
+	setAttr ".at" 180;
+	setAttr ".sn" yes;
+	setAttr ".mv" yes;
+	setAttr ".mvt" 0.0001;
+	setAttr ".sa" 30;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -8915,7 +8927,7 @@ connectAttr "groupParts2.og" "loftedSurface7Shape.i";
 connectAttr "groupId13.id" "loftedSurface7Shape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "loftedSurface7Shape.iog.og[0].gco";
 connectAttr "groupId14.id" "loftedSurface7Shape.ciog.cog[0].cgid";
-connectAttr "pasted__polyExtrudeFace1.out" "pasted__revolvedSurfaceShape2.i";
+connectAttr "polyBevel1.out" "pasted__revolvedSurfaceShape2.i";
 connectAttr "pasted__groupId1.id" "|group2|pasted__loftedSurface2|pasted__transform6|pasted__loftedSurfaceShape2.iog.og[0].gid"
 		;
 connectAttr ":initialShadingGroup.mwc" "|group2|pasted__loftedSurface2|pasted__transform6|pasted__loftedSurfaceShape2.iog.og[0].gco"
@@ -9174,6 +9186,8 @@ connectAttr "pasted__pasted__groupId11.id" "pasted__pasted__groupParts1.gi";
 connectAttr "pasted__pasted__polySplit2.out" "pasted__pasted__polySplit3.ip";
 connectAttr "pasted__pasted__polySplit1.out" "pasted__pasted__polySplit2.ip";
 connectAttr "pasted__pasted__polyCylinder1.out" "pasted__pasted__polySplit1.ip";
+connectAttr "pasted__polyExtrudeFace1.out" "polyBevel1.ip";
+connectAttr "pasted__revolvedSurfaceShape2.wm" "polyBevel1.mp";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "loftedSurfaceShape2.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "loftedSurfaceShape2.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
