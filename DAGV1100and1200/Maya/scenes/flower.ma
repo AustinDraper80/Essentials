@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: flower.ma
-//Last modified: Tue, Sep 22, 2026 03:55:03 PM
+//Last modified: Wed, Sep 23, 2026 11:27:33 AM
 //Codeset: UTF-8
 requires maya "2027";
 requires -nodeType "UsdDefaultSettings" -dataType "pxrUsdStageData" "mayaUsdPlugin" "0.37.0";
@@ -10,18 +10,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.6.2";
-fileInfo "UUID" "DAF7D1B0-BC40-8216-020C-CBA0719357E7";
+fileInfo "UUID" "F460A254-D84E-D3E8-8F93-D78D2DEE75D9";
 createNode transform -s -n "persp";
 	rename -uid "3A6E56AB-D54F-CBD0-9191-CAA548B525D6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 24.355475567911853 25.162532034012866 23.417594845656794 ;
-	setAttr ".r" -type "double3" -25.799999999999361 -313.19999999999652 2.3231087049508692e-15 ;
+	setAttr ".t" -type "double3" 19.484083967651415 21.595791631820855 17.811604673344856 ;
+	setAttr ".r" -type "double3" -25.799999999557865 -311.59999999992363 0 ;
 	setAttr ".rpt" -type "double3" 1.0391028374829926e-16 -2.6117615381253472e-17 6.58086827933607e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F690B5FE-7741-7AD5-4C80-1F99EBA06EB7";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 38.105253530257485;
+	setAttr ".coi" 29.910204033269412;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1977,7 +1977,7 @@ createNode mesh -n "pasted__revolvedSurfaceShape2" -p "pasted__revolvedSurface2"
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 273 ".pt";
+	setAttr -s 272 ".pt";
 	setAttr ".pt[1]" -type "float3" 0 0 -9.5367432e-07 ;
 	setAttr ".pt[272]" -type "float3" 4.4703484e-08 2.9802322e-08 -6.5565109e-07 ;
 	setAttr ".pt[273]" -type "float3" 0 2.9802322e-08 2.0861626e-07 ;
@@ -8450,20 +8450,20 @@ createNode mesh -n "pasted__pasted__loftedSurface7Shape" -p "pasted__pasted__lof
 	setAttr ".pt[470]" -type "float3" 2.0208175 3.2061059 -1.7763568e-15 ;
 	setAttr ".pt[471]" -type "float3" 2.0208175 3.2061059 -3.5527137e-15 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "60200B28-364F-DE77-8231-D79D28F82400";
+	rename -uid "86268BC9-EF4F-3E04-A9D5-3B9E6F0559E0";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E380B613-D846-A55C-E697-EC853522BC83";
+	rename -uid "6FE8498E-7B4A-369D-0ADE-C9BA3945AE79";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "508D2BBF-6A4A-A48E-6163-C486EE667398";
+	rename -uid "40903444-5E44-3268-CEB0-408DBD469309";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5EAAB9C3-CC4B-DD54-6488-C5AF3A12B700";
+	rename -uid "C44C1AEE-9045-1EBA-2EF0-67B39D763B92";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FD4C2A0D-B64E-F872-3D2A-19ABCF831544";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "E77E11EF-3A45-63A9-053E-F0A5AE3486C6";
+	rename -uid "9C45F70D-B443-CD4D-E829-1598ABB93EC6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "678DD546-884B-111F-77AE-189041CE85F5";
 	setAttr ".g" yes;
