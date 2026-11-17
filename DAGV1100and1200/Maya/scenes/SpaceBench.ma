@@ -1,6 +1,6 @@
 //Maya ASCII 2027 scene
 //Name: SpaceBench.ma
-//Last modified: Mon, Nov 16, 2026 03:07:21 PM
+//Last modified: Mon, Nov 16, 2026 03:08:35 PM
 //Codeset: UTF-8
 requires maya "2027";
 requires "mtoa" "5.6.2";
@@ -11,18 +11,18 @@ fileInfo "product" "Maya 2027";
 fileInfo "version" "2027";
 fileInfo "cutIdentifier" "202606171832-bee0ff2c7e";
 fileInfo "osv" "Mac OS X 20.6.2";
-fileInfo "UUID" "645B35FA-E649-75B8-06C7-578E0C59BB8C";
+fileInfo "UUID" "0EA13E55-034D-455E-1F6B-1BB9B1392BAA";
 createNode transform -s -n "persp";
 	rename -uid "580ED6A0-D743-BC72-0B54-DAA61F2A3BEA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 479.93961384995958 357.26647056012609 243.45189184639696 ;
-	setAttr ".r" -type "double3" -395.40000000068818 -279.2000000000059 0 ;
+	setAttr ".t" -type "double3" 164.48939435541615 108.22009400226233 207.41565934562374 ;
+	setAttr ".r" -type "double3" -389.40000000069671 -284.39999999999827 1.2789240116368368e-14 ;
 	setAttr ".rpt" -type "double3" -9.8093253930257687e-15 2.3110430316661453e-15 -2.7329026638757317e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9053BA64-9D46-AF8C-6B34-4A95052FA535";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 589.42717952665885;
+	setAttr ".coi" 188.21956510275527;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
